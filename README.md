@@ -1,0 +1,1 @@
+# django_church_website_sample
