@@ -1,0 +1,401 @@
+{% extends 'blog/base_main.html' %}
+{% load static %}
+{% block content %}
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area hero-post-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({%  static 'blog/img/bg-img/bible-blur-christ-372326.jpg' %});">
+            <!-- Post Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">LOREM IPSUM</h2>
+                            <p data-animation="fadeInUp" data-delay="300ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu massa,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({%  static 'blog/img/bg-img/1.jpg' %});">
+            <!-- Post Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Building The Hope</h2>
+                            <p data-animation="fadeInUp" data-delay="300ms">Learn about our mission, our beliefs, and the hope we have in Jesus.</p>
+                            <a href="{% url 'blog-about' %}" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({%  static 'blog/img/bg-img/abbey-aisle-ancient-1173794.jpg' %});">
+            <!-- Post Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">LOREM IPSUM</h2>
+                            <p data-animation="fadeInUp" data-delay="300ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu massa,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({%  static 'blog/img/bg-img/adult-audience-black-and-white-1666816.jpg' %});">
+            <!-- Post Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">LOREM IPSUM</h2>
+                            <p data-animation="fadeInUp" data-delay="300ms">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer arcu massa,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url({% static 'blog/img/bg-img/2.jpg' %});">
+            <!-- Post Content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+                            <h2 data-animation="fadeInUp" data-delay="100ms">Making Jesus Known</h2>
+                            <p data-animation="fadeInUp" data-delay="300ms">Learn about our mission, our beliefs, and the hope we have in Jesus.</p>
+                            <a href="#" class="btn crose-btn" data-animation="fadeInUp" data-delay="500ms">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### About Area Start ##### -->
+    <section class="about-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Welcome To Church</h2>
+                        <p>A church isn't a building—it's the people. We meet in locations around the United States and globally at Life.Church Online. No matter where you join us.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row about-content justify-content-center">
+                <!-- Single About Us Content -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="about-us-content mb-100">
+                        <img src="{% static 'blog/img/bg-img/3.jpg' %}" alt="">
+                        <div class="about-text">
+                            <h4>Our Church</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                            <a href="{% url 'blog-about' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single About Us Content -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="about-us-content mb-100">
+                        <img src="{% static 'blog/img/bg-img/4.jpg' %}" alt="">
+                        <div class="about-text">
+                            <h4>Our History</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                            <a href="#">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single About Us Content -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="about-us-content mb-100">
+                        <img src="{% static 'blog/img/bg-img/5.jpg' %}" alt="">
+                        <div class="about-text">
+                            <h4>Our Sermons</h4>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                            <a href="{% url 'blog-sermon' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About Area End ##### -->
+
+    <!-- ##### Call To Action Area Start ##### -->
+    <section class="call-to-action-area section-padding-100 bg-img bg-overlay" style="background-image: url({% static 'blog/img/bg-img/6.jpg' %})">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="call-to-action-content text-center">
+                        <h6>A Place For You</h6>
+                        <h2>Find a place to connect and grow through a small group, class, or regular gathering.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Call To Action Area End ##### -->
+
+    <!-- ##### Latest Sermons Area Start ##### -->
+    <section class="latest-sermons-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Latest Sermons</h2>
+                        <p>Loaded with fast-paced worship, activities, and video teachings to address real issues that students face each day</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <section class="latest-sermons-area">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Single Latest Sermons -->
+                            {% for object in sermon %}
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="single-latest-sermons mb-100">
+                                    <div class="sermons-thumbnail">
+                                        <a href="{{ object.get_absolute_url }}">
+                                            <img src="{{ object.picture.url }}" alt="">
+                                        </a>
+                                        <!-- Date -->
+                                        <div class="sermons-date">
+                                            <h6><span>{{ object.date_of_sermon|date:"d" }}</span>{{ object.date_of_sermon|date:"M" }}</h6>
+                                        </div>
+                                    </div>
+                                    <div class="sermons-content">
+                                        <div class="sermons-cata">
+                                            {% if object.format_video %}
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Video"><i class="fa fa-video-camera" aria-hidden="true"></i></a>
+                                            {% endif %}
+                                            {% if object.format_audio %}
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Audio"><i class="fa fa-headphones" aria-hidden="true"></i></a>
+                                            {% endif %}
+                                            {% if object.format_doc %}
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Docs"><i class="fa fa-file" aria-hidden="true"></i></a>
+                                            {% endif %}
+                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Download"><i class="fa fa-cloud-download" aria-hidden="true"></i></a>
+                                        </div>
+                                        <a href="{{ object.get_absolute_url }}"><h4>{{ object.title }}</h4></a>
+                                        <div class="sermons-meta-data">
+                                            <p><i class="fa fa-user" aria-hidden="true"></i> Sermon From: <span>{{ object.preacher }}</span></p>
+                                            <p><i class="fa fa-tag" aria-hidden="true"></i> Categories: <span>{{ object.category }}</span></p>
+                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>{{ object.date_of_sermon|date:"F d " }}on<span>{{ object.time_start|date:"h:s A" }} - {{ object.time_end|date:"h:s A" }}</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Latest Sermons Area End ##### -->
+
+    <!-- ##### Upcoming Events Area Start ##### -->
+    <section class="upcoming-events-area section-padding-0-100">
+        <!-- Upcoming Events Heading Area -->
+        <div class="upcoming-events-heading bg-img bg-overlay bg-fixed" style="background-image: url({% static 'blog/img/bg-img/1.jpg' %});">
+            <div class="container">
+                <div class="row">
+                    <!-- Section Heading -->
+                    <div class="col-12">
+                        <div class="section-heading text-left white">
+                            <h2>Upcoming Events</h2>
+                            <p>Be sure to visit our Upcoming Events page regularly to get infomartion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Slide -->
+        <div class="upcoming-events-slides-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="upcoming-slides owl-carousel">
+
+                                <div class="single-slide">
+                                    <!-- Single Upcoming Events Area -->
+                                    {% for object in event %}
+                                    <div class="single-upcoming-events-area d-flex flex-wrap align-items-center">
+                                        <!-- Thumbnail -->
+                                        <div class="upcoming-events-thumbnail">
+                                            <img src="{{ object.picture.url }}" width="285" height="171.133" alt="">
+                                        </div>
+                                        <!-- Content -->
+                                        <div class="upcoming-events-content d-flex flex-wrap align-items-center">
+                                            <div class="events-text">
+                                                <h4>{{ object.title }}</h4>
+                                                <div class="events-meta">
+                                                    <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> {{ object.date|date:"F d, Y"}}</a>
+                                                    <a href="#"><i class="fa fa-clock-o" aria-hidden="true"></i> {{ object.time_start|date:"H:s" }} - {{ object.time_end|date:"H:s" }}</a>
+                                                    <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>{{ object.location }}</a>
+                                                </div>
+                                                <p>{{ object.content|truncatewords:20 }}</p>
+                                                <a type="button" href="{% url 'blog-event' %}">Read More <i class="fa fa-angle-double-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Upcoming Events Area End ##### -->
+
+    <!-- ##### Gallery Area Start ##### -->
+    <div class="gallery-area d-flex flex-wrap" id="gallery">
+        <!-- Single Gallery Area -->
+        {% for gallery in gallery %}
+        <div class="single-gallery-area">
+            <a href="{{ gallery.gallery.url }}" class="gallery-img" title="Gallery Image 1">
+                <img src="{{ gallery.gallery.url }}" alt="">
+            </a>
+        </div>
+        {% endfor %}
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/14.jpg' %}" class="gallery-img" title="Gallery Image 2">
+                <img src="{% static 'blog/img/bg-img/14.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/15.jpg' %}" class="gallery-img" title="Gallery Image 3">
+                <img src="{% static 'blog/img/bg-img/15.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/16.jpg' %}" class="gallery-img" title="Gallery Image 4">
+                <img src="{% static 'blog/img/bg-img/16.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/17.jpg' %}" class="gallery-img" title="Gallery Image 5">
+                <img src="{% static 'blog/img/bg-img/17.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/18.jpg' %}" class="gallery-img" title="Gallery Image 6">
+                <img src="{% static 'blog/img/bg-img/18.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/19.jpg' %}" class="gallery-img" title="Gallery Image 7">
+                <img src="{% static 'blog/img/bg-img/19.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/20.jpg' %}" class="gallery-img" title="Gallery Image 8">
+                <img src="{% static 'blog/img/bg-img/20.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/21.jpg' %}" class="gallery-img" title="Gallery Image 9">
+                <img src="{% static 'blog/img/bg-img/21.jpg' %}" alt="">
+            </a>
+        </div>
+
+        <!-- Single Gallery Area -->
+        <div class="single-gallery-area">
+            <a href="{% static 'blog/img/bg-img/22.jpg' %}" class="gallery-img" title="Gallery Image 10">
+                <img src="{% static 'blog/img/bg-img/22.jpg' %}" alt="">
+            </a>
+        </div>
+    </div>
+    <!-- ##### Gallery Area End ##### -->
+
+    <!-- ##### Blog Area Start ##### -->
+    <section class="blog-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <!-- Section Heading -->
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Latest News</h2>
+                        <p>Latest information on religion, church, politics revolves around us</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Single Blog Post Area -->
+                {% for object in news %}
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail">
+                            <a href="{{ object.get_absolute_url }}"><img src="{{ object.picture.url }}" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                             <a href="{{ object.get_absolute_url }}" class="post-title">
+                                  <h4>{{ object.title }}</h4>
+                             </a>
+                             <div class="post-meta d-flex">
+                                  <a href="#"><i class="fa fa-user pr-1" aria-hidden="true"></i>{{ object.reporter }}</a>
+                                  <a href="#"><i class="fa fa-calendar pr-1" aria-hidden="true"></i>{{ object.published_date|date:"F d, Y" }}</a>
+                             </div>
+                             <p class="post-excerpt">{{ object.content|truncatewords:20 }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- Single Blog Post Area -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="single-blog-post mb-100">
+                        <div class="post-thumbnail">
+                            <a href="{% url 'blog-detail' %}"><img src="{% static 'blog/img/bg-img/12.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="post-content">
+                            <a href="{% url 'blog-detail' %}" class="post-title">
+                                <h4>The Bishop of Dromore was right to resign.</h4>
+                            </a>
+                            <div class="post-meta d-flex">
+                                <a href="#"><i class="fa fa-user" aria-hidden="true"></i> Lucie Smith</a>
+                                <a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> April 15, 2018</a>
+                            </div>
+                            <p class="post-excerpt">God comes to us in free and undeserved favor in the person of Jesus Christ who lived, died, and rose for us that we might belong to God.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Blog Area End ##### -->
+{% endblock content %}

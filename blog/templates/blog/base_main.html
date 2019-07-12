@@ -1,0 +1,196 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Geeks Church</title>
+    <!-- Video js -->
+    <link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jplayer/2.9.2/add-on/jplayer.playlist.js" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="{% static 'blog/img/core-img/favicon.ico' %}' %}">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="{% static 'blog/style.css' %}">
+
+</head>
+
+<body>
+    <!-- ##### Preloader ##### -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <!-- Line -->
+        <div class="line-preloader"></div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+        <!-- ***** Navbar Area ***** -->
+        <div class="crose-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="croseNav">
+
+                        <!-- Nav brand -->
+                        <a href="{% url 'blog-home' %}" class="nav-brand"><img src="{% static 'blog/img/core-img/logo_geeks.png' %}" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- close btn -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="{% url 'blog-home' %}" class="active" style="text-decoration: underline;text-decoration-color:  #c92f2f">Home</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="{% url 'blog-home' %}">Home</a></li>
+                                            <li><a href="{% url 'blog-about' %}">About</a></li>
+                                            <li><a href="{% url 'blog-sermon' %}">Sermons</a></li>
+                                            <li><a href="{% url 'blog-event' %}">Events</a></li>
+                                            <li><a href="{% url 'blog-announcement' %}">Announcements</a></li>
+                                            <li><a href="{% url 'blog-detail' %}">Blog Details</a></li>
+                                            <li><a href="{% url 'blog-contact' %}">Contact</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="{% url 'blog-News' %}">News</a></li>
+                                    <li><a href="{% url 'blog-event' %}">Events</a></li>
+                                    <li><a href="{% url 'blog-sermon' %}">Sermons</a></li>
+                                    <li><a href="{% url 'blog-announcement' %}">Announcement</a></li>
+                                    <li><a href="{% url 'blog-contact' %}">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Button -->
+                                <div id="header-search"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- ***** Search Form Area ***** -->
+            <div class="search-form-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="searchForm">
+                                <form action="#" method="post">
+                                    <input type="search" name="search" id="search" placeholder="Enter keywords &amp; hit enter...">
+                                    <button type="submit" class="d-none"></button>
+                                </form>
+                                <div class="close-icon" id="searchCloseIcon"><i class="fa fa-close" aria-hidden="true"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ***** Navbar Area ***** -->
+    </header>
+    <!-- ##### Header Area End ##### -->
+    {% block content %}
+    {% endblock content %}
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <a href="{% url 'blog-home' %}" class="footer-logo"><img src="{% static 'blog/img/core-img/logo_geeks2.png' %}" alt=""></a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <h5 class="widget-title">Quick Link</h5>
+                            <nav class="footer-menu">
+                                <ul>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Home</a></li>
+                                    <li><a href="{% url 'blog-event' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Event</a></li>
+                                    <li><a href="{% url 'blog-News' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> News</a></li>
+                                    <li><a href="{% url 'blog-announcement' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Announcement</a></li>
+                                    <li><a href="{% url 'blog-sermon' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Sermons</a></li>
+                                    <li><a href="{% url 'blog-about' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> About Us</a></li>
+                                    <li><a href="{% url 'blog-contact' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <h5 class="widget-title">Ministries</h5>
+                            <nav class="footer-menu">
+                                <ul>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Children</a></li>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Youth</a></li>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Men</a></li>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Women</a></li>
+                                    <li><a href="{% url 'blog-home' %}"><i class="fa fa-angle-double-right" aria-hidden="true"></i> Evangelism</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-70">
+                            <h5 class="widget-title">Contact Us</h5>
+
+                            <div class="contact-information">
+                                <p><i class="fa fa-map-marker" aria-hidden="true"></i> 70 Forest H2, Accra, GH</p>
+                                <p><i class="fa fa-phone" aria-hidden="true"></i> 2331-1234-88888</p>
+                                <a href="mailto:info.deercreative@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info.geekschurch@gmail.com</a>
+                                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Mon - Fri: 08.00am - 18.00pm</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="{% static 'blog/js/jquery/jquery-2.2.4.min.js' %}"></script>
+    <!-- Popper js -->
+    <script src="{% static 'blog/js/bootstrap/popper.min.js' %}"></script>
+    <!-- Bootstrap js -->
+    <script src="{% static 'blog/js/bootstrap/bootstrap.min.js' %}"></script>
+    <!-- All Plugins js -->
+    <script src="{% static 'blog/js/plugins/plugins.js' %}"></script>
+    <!-- Active js -->
+    <script src="{% static 'blog/js/active.js' %}"></script>
+    <!-- Video js
+    <script src='https://vjs.zencdn.net/7.5.5/video.js'></script>-->
+</body>
+
+</html>
