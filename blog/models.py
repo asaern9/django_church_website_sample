@@ -37,7 +37,7 @@ class Sermon(models.Model):
     date_of_sermon = models.DateTimeField()  # only the month and the day
     time_start = models.DateTimeField()
     time_end = models.DateTimeField()
-    format_video = models.FileField(upload_to='Sermon/Video/', blank=True, null=True)
+    format_video = models.URLField(max_length=1000, blank=True, null=True)
     format_audio = models.FileField(upload_to='Sermon/Audio/', blank=True, null=True)
     format_doc = models.FileField(upload_to='Sermon/Document/', blank=True, null=True)
     picture = models.ImageField(upload_to='Sermon/pictures', null=True)
